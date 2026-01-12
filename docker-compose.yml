@@ -1,14 +1,14 @@
 services:
-postgres:
-image: postgres:16
-container_name: climate_postgres
-environment:
-POSTGRES_USER: postgres
-POSTGRES_PASSWORD: postgres
-POSTGRES_DB: climate
-ports:
-- "5432:5432"
-volumes:
-- pgdata:/var/lib/PostgreSQL/data
-
-pgdata:
+    postgres:
+        image: postgres:16
+        container_name: climate_postgres
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: climate
+        ports:
+            - "5432:5432"
+        volumes:
+            - pgdata:/var/lib/PostgreSQL/data
+    volumes:
+        pgdata:
