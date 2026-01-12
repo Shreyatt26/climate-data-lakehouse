@@ -1,4 +1,5 @@
 from __future__ import annotations
+from prefect import flow, task
 
 import subprocess
 import sys
@@ -6,6 +7,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+@task(retries=2, retry_delay_seconds=10)
 def run_step(module_path: str) -> None:
     """
     Runs a python module as: python <module_path>
@@ -30,8 +32,9 @@ def run_step(module_path: str) -> None:
 
     if result.returncode != 0:
         raise RuntimeError(f"Step failed: {module_path} (exit code {result.returncode})")
-    
-def main() -> None:
+
+@flow(name="climate-data-pipeline")
+def climate_pipeline() -> None:
     ## Run pipeline steps in order
     run_step("src/ingest/ingest.py")
     run_step("src/transform/transform.py")
@@ -40,4 +43,4 @@ def main() -> None:
     print("\n Pipeline complete: Bronze -> Silver -> Postgres")
 
 if __name__ == "__main__":
-    main()
+    climate_pipeline()
