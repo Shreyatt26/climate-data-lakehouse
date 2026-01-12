@@ -1,0 +1,2 @@
+import{d as r,g as s,c as n,o as l,h as e,i as o,m as a,d3 as p,d4 as u}from"./index-B0Ov_jWr.js";import{u as _}from"./usePageTitle-DOxz6387.js";const C=r({__name:"WorkPoolCreate",setup(c){return _("Create Work Pool"),(d,f)=>{const t=s("p-layout-default");return l(),n(t,null,{header:e(()=>[o(a(u))]),default:e(()=>[o(a(p))]),_:1})}}});export{C as default};
+//# sourceMappingURL=WorkPoolCreate-_Lwg1LSk.js.map
