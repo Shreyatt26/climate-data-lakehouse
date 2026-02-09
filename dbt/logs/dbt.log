@@ -1,0 +1,129 @@
+[0m18:40:18.244134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013855216500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013856548550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013856548340>]}
+
+
+============================== 18:40:18.251280 | e1143d3b-00f6-41ee-bed3-10185af1cace ==============================
+[0m18:40:18.251280 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:40:18.253279 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'invocation_command': 'dbt init climate_dbt', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Shreya Tanguturi\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m18:40:18.297990 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Shreya Tanguturi\.dbt
+[0m18:40:18.305295 [debug] [MainThread]: Starter project path: C:\Users\Shreya Tanguturi\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m18:40:18.450630 [info ] [MainThread]: 
+Your new dbt project "climate_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:40:18.451136 [info ] [MainThread]: Setting up your profile.
+[0m22:38:01.501620 [info ] [MainThread]: Profile climate_dbt written to C:\Users\Shreya Tanguturi\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:38:01.553584 [debug] [MainThread]: Command `dbt init` succeeded at 22:38:01.553584 after 14263.42 seconds
+[0m22:38:01.565695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013855216500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013856543D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013856662BF0>]}
+[0m22:38:01.581378 [debug] [MainThread]: Flushing usage events
+[0m22:38:02.096825 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:38:13.931859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F24D632560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F24E96C550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F24E96C3A0>]}
+
+
+============================== 22:38:13.938799 | 14f39d4e-fe08-4efb-92cc-191415790f9e ==============================
+[0m22:38:13.938799 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:38:13.943691 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'printer_width': '80', 'write_json': 'True', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Shreya Tanguturi\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m22:38:14.000115 [info ] [MainThread]: dbt version: 1.11.2
+[0m22:38:14.000115 [info ] [MainThread]: python version: 3.10.4
+[0m22:38:14.000115 [info ] [MainThread]: python path: C:\Users\Shreya Tanguturi\AppData\Local\Programs\Python\Python310\python.exe
+[0m22:38:14.000115 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m22:38:14.124420 [info ] [MainThread]: Using profiles dir at C:\Users\Shreya Tanguturi\.dbt
+[0m22:38:14.126653 [info ] [MainThread]: Using profiles.yml file at C:\Users\Shreya Tanguturi\.dbt\profiles.yml
+[0m22:38:14.128664 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Shreya Tanguturi\climate-data-lakehouse\dbt\dbt_project.yml
+[0m22:38:14.133000 [info ] [MainThread]: adapter type: postgres
+[0m22:38:14.133509 [info ] [MainThread]: adapter version: 1.10.0
+[0m22:38:14.135045 [info ] [MainThread]: Configuration:
+[0m22:38:14.137623 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:38:14.137623 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:38:14.140947 [info ] [MainThread]: Required dependencies:
+[0m22:38:14.143680 [debug] [MainThread]: Executing "git --help"
+[0m22:38:14.235191 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:38:14.235191 [debug] [MainThread]: STDERR: "b''"
+[0m22:38:14.235191 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:38:14.235191 [info ] [MainThread]: Connection:
+[0m22:38:14.239852 [info ] [MainThread]:   host: localhost
+[0m22:38:14.239852 [info ] [MainThread]:   port: 5432
+[0m22:38:14.239852 [info ] [MainThread]:   user: postgres
+[0m22:38:14.243814 [info ] [MainThread]:   database: climate
+[0m22:38:14.243814 [info ] [MainThread]:   schema: public
+[0m22:38:14.245419 [info ] [MainThread]:   connect_timeout: 10
+[0m22:38:14.245419 [info ] [MainThread]:   role: None
+[0m22:38:14.245419 [info ] [MainThread]:   search_path: None
+[0m22:38:14.245419 [info ] [MainThread]:   keepalives_idle: 0
+[0m22:38:14.245419 [info ] [MainThread]:   sslmode: None
+[0m22:38:14.249930 [info ] [MainThread]:   sslcert: None
+[0m22:38:14.251680 [info ] [MainThread]:   sslkey: None
+[0m22:38:14.252637 [info ] [MainThread]:   sslrootcert: None
+[0m22:38:14.252637 [info ] [MainThread]:   application_name: dbt
+[0m22:38:14.252637 [info ] [MainThread]:   retries: 1
+[0m22:38:14.252637 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m22:38:14.933418 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m22:38:20.907926 [debug] [MainThread]: Using postgres connection "debug"
+[0m22:38:20.907926 [debug] [MainThread]: On debug: select 1 as id
+[0m22:38:20.911494 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:38:21.248078 [debug] [MainThread]: SQL status: SELECT 1 in 0.337 seconds
+[0m22:38:21.248626 [debug] [MainThread]: On debug: Close
+[0m22:38:21.248626 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:38:21.255019 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:38:21.255019 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Shreya Tanguturi\climate-data-lakehouse\dbt\dbt_project.yml> not found
+
+[0m22:38:21.258762 [debug] [MainThread]: Command `dbt debug` failed at 22:38:21.258762 after 7.52 seconds
+[0m22:38:21.258762 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:38:21.258762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F24D632560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F24EAC51B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F24EAACAC0>]}
+[0m22:38:21.258762 [debug] [MainThread]: Flushing usage events
+[0m22:38:21.622243 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:49:03.472763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C1FEA24A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C211D8550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C211D8370>]}
+
+
+============================== 15:49:03.483276 | 67580c2d-9906-48fa-9c16-c6b866d78f16 ==============================
+[0m15:49:03.483276 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:49:03.484279 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Shreya Tanguturi\\.dbt', 'invocation_command': 'dbt init climate_dbt', 'printer_width': '80', 'target_path': 'None'}
+[0m15:49:03.533289 [info ] [MainThread]: A project called climate_dbt already exists here.
+[0m15:49:03.535676 [debug] [MainThread]: Command `dbt init` succeeded at 15:49:03.535170 after 0.26 seconds
+[0m15:49:03.536683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C1FEA24A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C211D8B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C211D8BE0>]}
+[0m15:49:03.537684 [debug] [MainThread]: Flushing usage events
+[0m15:49:03.789859 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:38:12.385574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5B2E124D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5B41486A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5B41484C0>]}
+
+
+============================== 16:38:12.396095 | 3e056436-bb41-400e-83c7-1f3ca6bc778d ==============================
+[0m16:38:12.396095 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:38:12.396095 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\Shreya Tanguturi\\.dbt', 'write_json': 'True', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_path': 'logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run', 'printer_width': '80', 'target_path': 'None'}
+[0m16:38:12.396095 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Shreya Tanguturi\climate-data-lakehouse\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:38:12.400469 [debug] [MainThread]: Command `dbt run` failed at 16:38:12.400469 after 0.29 seconds
+[0m16:38:12.400469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5B2E124D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5B4148790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5B4148760>]}
+[0m16:38:12.406129 [debug] [MainThread]: Flushing usage events
+[0m16:38:12.626981 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:38:36.336630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A053764D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A066BA860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A066BA680>]}
+
+
+============================== 16:38:36.344308 | a36ef8b2-1059-469c-8700-1320a9db166a ==============================
+[0m16:38:36.344308 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:38:36.346002 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt test', 'target_path': 'None', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\Shreya Tanguturi\\.dbt', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m16:38:36.347614 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Shreya Tanguturi\climate-data-lakehouse\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:38:36.349305 [debug] [MainThread]: Command `dbt test` failed at 16:38:36.349305 after 0.20 seconds
+[0m16:38:36.350363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A053764D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A066BA950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A066BA920>]}
+[0m16:38:36.351433 [debug] [MainThread]: Flushing usage events
+[0m16:38:36.574306 [debug] [MainThread]: An error was encountered while trying to flush usage events
