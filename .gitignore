@@ -1,13 +1,5 @@
-# Python virtual environments
-.venv/
-venv/
-
-# Python cache
+echo ".venv/
+Lib/
 __pycache__/
 *.pyc
-
-# Environment variables
-.env
-
-# VS Code
-.vscode/
+.env" >> .gitignore
